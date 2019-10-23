@@ -8,14 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="83b0def1-76d2-4fbc-a71b-74aae8af6058" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qf/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qf/controller/GoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qf/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qf/dao/GoodsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qf/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qf/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qf/service/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qf/service/GoodsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dao/GoodsDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dao/GoodsDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/customer/recommend_good.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/customer/recommend_good.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qf/TestDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qf/TestDao.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -90,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qf/service/GoodsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
-              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#400#401#0" expanded="true" />
@@ -124,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qf/TestDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="79" column="43" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+            <state relative-caret-position="304">
+              <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -601,9 +593,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDao_test2 - 2019.10.22 at 20h 10m 41s.xml">
-      <configuration name="TestDao.test2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestDao_test2 - 2019.10.22 at 20h 11m 51s.xml">
       <configuration name="TestDao.test2" configurationId="JUnit" />
     </history-entry>
@@ -631,9 +620,12 @@
     <history-entry file="TestDao_test5 - 2019.10.23 at 09h 56m 24s.xml">
       <configuration name="TestDao.test5" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestDao_test6 - 2019.10.23 at 11h 33m 43s.xml">
+      <configuration name="TestDao.test6" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72385000" />
+    <option name="totallyTimeSpent" value="72628000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -648,7 +640,7 @@
     <frame x="-29" y="0" width="1424" height="701" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27874818" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27874818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -658,7 +650,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2646154" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26343155" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28470254" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1051,7 +1043,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qf/service/GoodsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#400#401#0" expanded="true" />
@@ -1079,8 +1071,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qf/TestDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="79" column="43" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+        <state relative-caret-position="304">
+          <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
         </state>
       </provider>
     </entry>
