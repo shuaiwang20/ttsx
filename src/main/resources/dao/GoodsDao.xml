@@ -20,6 +20,21 @@
         from tb_goods
         where id=#{goodsId}
     </select>
+    <select id="selectByTypeId" resultType="Goods">
+            select * from tb_goods where typeId=#{typeId}
+            <if test="flag!=null and flag=='price'">
+                order by price
+                <if test="abc!=null">
+                    desc
+                </if>
+            </if>
+            <if test="flag==null and flag=='time'">
+                order by create_time desc
+            </if>
+    </select>
+    <select id="selectByTime" resultType="Goods">
+        select * from tb_goods order by create_time desc limit 2;
+    </select>
 <!--    <select id="selectByTypeId" resultMap="ok" >-->
 
 <!--    SELECT tb_goods.`id` id,tb_goods.`title` title,tb_goods.`bannerPath` bannerPath,tb_goods.`price` price ,tb_goods.`detail` detail,tb_goods.`imgpath` imgPath-->

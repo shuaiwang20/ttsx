@@ -36,6 +36,13 @@
 
         <!--取别名 定义缺省包-->
         <property name="typeAliasesPackage" value="com.qf.pojo"/>
+
+        <!--指明pageHelp插件-->
+        <property name="plugins">
+            <array>
+                <bean id="helper" class="com.github.pagehelper.PageInterceptor"></bean>
+            </array>
+        </property>
     </bean>
 
     <!--MapperScannerConfigurer-->

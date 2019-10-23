@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: shuaiwang20
-  Date: 2019/10/21
-  Time: 22:05
-  To change this template use File | Settings | File Templates.
---%>
 <%@page pageEncoding="UTF-8" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
@@ -19,66 +12,16 @@
     <script type="text/javascript" src="${pageContext.request.contextPath}/customer/js/slide.js"></script>
 </head>
 <body>
-<div class="header_con">
-    <div class="header">
-        <div class="welcome fl">欢迎来到天天生鲜!</shiro></em></div>
-        <div class="fr">
-            <div class="login_info fl">
-                欢迎您：<em><shiro:user><shiro:principal/></shiro:user></em>
-            </div>
-            <div class="login_btn fl">
-                <a href="login.html">登录</a>
-                <span>|</span>
-                <a href="${pageContext.request.contextPath}/user/login">注册</a>
-            </div>
-            <div class="user_link fl">
-                <span>|</span>
-                <a href="user_center_info.html">用户中心</a>
-                <span>|</span>
-                <a href="cart.html">我的购物车</a>
-                <span>|</span>
-                <a href="user_center_order.html">我的订单</a>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="search_bar clearfix">
-    <a href="index.html" class="logo fl"><img src="${pageContext.request.contextPath}/customer/images/logo.png"></a>
-    <div class="search_con fl">
-        <input type="text" class="input_text fl" name="" placeholder="搜索商品">
-        <input type="button" class="input_btn fr" name="" value="搜索">
-    </div>
-    <div class="guest_cart fr">
-        <a href="#" class="cart_name fl">我的购物车</a>
-        <div class="goods_count fl" id="show_count">1</div>
-    </div>
+<div id="header">
+    <script type="text/javascript">
+        $("#header").load("${pageContext.request.contextPath}/user/header");
+    </script>
 </div>
-
-<div class="navbar_con">
-    <div class="navbar">
-        <h1 class="fl">全部商品分类</h1>
-        <ul class="navlist fl">
-            <li><a href="">首页</a></li>
-            <li class="interval">|</li>
-            <li><a href="">手机生鲜</a></li>
-            <li class="interval">|</li>
-            <li><a href="">抽奖</a></li>
-        </ul>
-    </div>
-</div>
-
 <div class="center_con clearfix" >
 
-
-
     <ul class="subnav fl" id="goodsType">
-<%--    <li><a href="#model01" class="fruit">新鲜水果</a></li>--%>
-<%--    <li><a href="#model02" class="seafood">海鲜水产</a></li>--%>
-<%--    <li><a href="#model03" class="meet">猪牛羊肉</a></li>--%>
-<%--    <li><a href="#model04" class="egg">禽类蛋品</a></li>--%>
-<%--    <li><a href="#model05" class="vegetables">新鲜蔬菜</a></li>--%>
-<%--    <li><a href="#model06" class="ice">速冻食品</a></li>--%>
+
         <script type="text/javascript">
               $("#goodsType").load("${pageContext.request.contextPath}/goodsType/allGoodsType")
         </script>
@@ -271,21 +214,24 @@
     </div>
 </div>
 
-<div class="footer">
-    <div class="foot_link">
-        <a href="#">关于我们</a>
-        <span>|</span>
-        <a href="#">联系我们</a>
-        <span>|</span>
-        <a href="#">招聘人才</a>
-        <span>|</span>
-        <a href="#">友情链接</a>
-    </div>
-    <p>CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved</p>
-    <p>电话：010-****888    京ICP备*******8号</p>
+<%--<div class="footer">--%>
+<%--    <div class="foot_link">--%>
+<%--        <a href="#">关于我们</a>--%>
+<%--        <span>|</span>--%>
+<%--        <a href="#">联系我们</a>--%>
+<%--        <span>|</span>--%>
+<%--        <a href="#">招聘人才</a>--%>
+<%--        <span>|</span>--%>
+<%--        <a href="#">友情链接</a>--%>
+<%--    </div>--%>
+<%--    <p>CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved</p>--%>
+<%--    <p>电话：010-****888    京ICP备*******8号</p>--%>
+<%--</div>--%>
+<div id="footer">
+    <script >
+        $("#footer").load("${pageContext.request.contextPath}/user/footer")
+    </script>
 </div>
-<%--<script type="text/javascript" src="${pageContext.request.contextPath}/customer/js/slide.js"></script>--%>
-<%--<script type="text/javascript" src="${pageContext.request.contextPath}/customer/js/slide.js"></script>--%>
 <script type="text/javascript">
     BCSlideshow('focuspic');
     var oFruit = document.getElementById('fruit_more');

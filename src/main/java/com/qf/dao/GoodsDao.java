@@ -10,4 +10,8 @@ public interface GoodsDao {
     void insert(Goods goods);
 
     Goods selectById(@Param("goodsId") Integer goodsId);
+
+    List<Goods> selectByTypeId(@Param("typeId") Integer typeId,@Param("flag") String flag,@Param("abc")String abc);
+
+    List<Goods> selectByTime();
 }

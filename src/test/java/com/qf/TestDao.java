@@ -69,14 +69,59 @@ public class TestDao {
     public void test5(){
         ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
         GoodsDao goodsDao = context.getBean("goodsDao", GoodsDao.class);
-        goodsDao.insert(new Goods(null,"基围虾","goods_detail.jpg","goods021.jpg",new BigDecimal("48.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
-        ,2,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods006.jpg",new BigDecimal("22.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+        ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods006.jpg",new BigDecimal("21.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods006.jpg",new BigDecimal("21.9"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods006.jpg",new BigDecimal("21.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods006.jpg",new BigDecimal("14.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods006.jpg",new BigDecimal("21.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods006.jpg",new BigDecimal("21.9"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods005.jpg",new BigDecimal("14.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods005.jpg",new BigDecimal("12.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods005.jpg",new BigDecimal("21.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods005.jpg",new BigDecimal("13.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods005.jpg",new BigDecimal("51.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods007.jpg",new BigDecimal("21.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods007.jpg",new BigDecimal("2.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods007.jpg",new BigDecimal("3.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods007.jpg",new BigDecimal("4.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods007.jpg",new BigDecimal("5.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+        goodsDao.insert(new Goods(null,"水蜜桃","goods_detail.jpg","goods007.jpg",new BigDecimal("7.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
+                ,1,new Date()));
+
     }
+
     @Test
     public void test6(){
         ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
         GoodsDao goodsDao = context.getBean("goodsDao", GoodsDao.class);
         Goods goods = goodsDao.selectById(1);
         System.out.println(goods.toString());
+    }
+    @Test
+    public void test7(){
+        ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+        GoodsDao goodsDao = context.getBean("goodsDao", GoodsDao.class);
+        List<Goods> goodsList = goodsDao.selectByTypeId(1, "price","adc");
+        for (Goods goods : goodsList) {
+            System.out.println(goods.toString());
+        }
     }
 }

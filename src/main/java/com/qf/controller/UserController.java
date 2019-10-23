@@ -130,4 +130,19 @@ public class UserController {
         return "forward:/WEB-INF/customer/index.jsp";
     }
 
+    @RequestMapping("/header")
+    public String header(){
+        return "forward:/WEB-INF/customer/header.jsp";
+    }
+
+    @RequestMapping("/footer")
+    public String footer(){
+        return "forward:/WEB-INF/customer/footer.jsp";
+    }
+
+    @RequestMapping("/logOut")
+    public String logOut(){
+        SecurityUtils.getSubject().logout();
+        return "forward:/user/login";
+    }
 }
