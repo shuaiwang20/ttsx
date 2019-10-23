@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.dao.GoodsTypeDao">
+    <cache type="com.qf.cache.MybatisCache"/>
+    
+    <select id="selectAll" resultType="GoodsType">
+        select * from tb_goodstype order by id
+    </select>
+
+    <select id="selectByTypeId" resultMap="ok">
+
+    SELECT tb_goods.`id` id,tb_goods.`title` title,tb_goods.`bannerPath` bannerPath,tb_goods.`price` price ,tb_goods.`detail` detail,tb_goods.`imgpath` imgPath
+	    ,tb_goods.`typeId` typeId,tb_goodsType.`banner_path` bannerpath1,tb_goodsType.title title1
+    FROM tb_goods JOIN tb_goodsType
+    ON tb_goods.`typeId`=tb_goodsType.`id`
+    WHERE tb_goods.`typeId`=#{typeId}
+    ORDER BY tb_goods.`create_time` DESC
+    LIMIT 4
+    </select>
+    <resultMap id="ok" type="GoodsType">
+        <id property="id" column="typeId"/>
+        <result property="banner_path" column="bannerpath1"/>
+        <result property="title" column="title1"/>
+        <collection property="goodsList" ofType="Goods" autoMapping="true">
+            <id property="id" column="id"/>
+        </collection>
+    </resultMap>
+
+    <select id="selectAllInfo" resultMap="ok1">
+        SELECT tb_goods.`id` id,tb_goods.`title` title,tb_goods.`bannerPath` bannerPath,tb_goods.`price` price ,tb_goods.`detail` detail,tb_goods.`imgpath` imgPath
+	    ,tb_goods.`typeId` typeId,tb_goodsType.`banner_path` bannerpath1,tb_goodsType.title title1
+        FROM tb_goods JOIN tb_goodsType
+        ON tb_goods.`typeId`=tb_goodsType.`id`
+        ORDER BY tb_goods.`create_time` DESC
+        LIMIT 4
+    </select>
+
+    <resultMap id="ok1" type="GoodsType">
+        <id property="id" column="typeId"/>
+        <result property="banner_path" column="bannerpath1"/>
+        <result property="title" column="title1"/>
+        <collection property="goodsList" ofType="Goods" autoMapping="true">
+            <id property="id" column="id"/>
+        </collection>
+    </resultMap>
+</mapper>

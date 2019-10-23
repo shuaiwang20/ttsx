@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                            http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/context
+                            http://www.springframework.org/schema/context/spring-context.xsd
+                            http://www.springframework.org/schema/aop
+                            http://www.springframework.org/schema/aop/spring-aop.xsd
+                            http://www.springframework.org/schema/mvc
+                            http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <!--注解开发-->
+    <context:component-scan base-package="com.qf.controller" use-default-filters="true">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+    <mvc:annotation-driven/>
+
+    <!--访问静态资源-->
+    <mvc:default-servlet-handler/>
+
+    <!--为shiroFilter的注解动态代理-->
+    <!--shiro代理增强handler-->
+    <!-- 调用工厂中 Initializable类型的组件的 init方法 -->
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+    <!--aop-->
+    <aop:config/>
+    <!-- 在此bean的构建过程中，初始化了一些额外功能和piontcut
+         interceptors.add(new RoleAnnotationMethodInterceptor(resolver));
+                              @RequiresRoles
+         interceptors.add(new PermissionAnnotationMethodInterceptor(resolver));
+                              @RequiresPermissions
+         interceptors.add(new AuthenticatedAnnotationMethodInterceptor(resolver));
+                              @RequiresAuthentication
+         interceptors.add(new UserAnnotationMethodInterceptor(resolver));
+                              @RequiresUser
+         interceptors.add(new GuestAnnotationMethodInterceptor(resolver));
+                              @RequiresGuest
+    -->
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <!-- 依赖shiro的核心对象 -->
+        <property name="securityManager" ref="securityManager"/>
+    </bean>
+
+    <!--注册异常解析器-->
+    <bean id="exceptionHandle" class="com.qf.exceptionresolver.ExceptionResolver"/>
+</beans>

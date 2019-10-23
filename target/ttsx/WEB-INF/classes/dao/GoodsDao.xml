@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.dao.GoodsDao">
+<!--     private Integer id;
+    private String title;
+    private String imgPath;
+    private String bannerPath;
+    private BigDecimal price;
+    private String detail;
+    private Integer typeId;
+    private Date registerTime;-->
+    <insert id="insert" parameterType="Goods">
+        insert into tb_goods (title,imgpath,bannerpath,price,detail,typeId,create_time)
+        values (#{title},#{imgPath},#{bannerPath},#{price},#{detail},#{typeId},#{registerTime})
+    </insert>
+<!--    <select id="selectByTypeId" resultMap="ok" >-->
+
+<!--    SELECT tb_goods.`id` id,tb_goods.`title` title,tb_goods.`bannerPath` bannerPath,tb_goods.`price` price ,tb_goods.`detail` detail,tb_goods.`imgpath` imgPath-->
+<!--	    ,tb_goods.`typeId` typeId,tb_goodsType.`banner_path` bannerpath1,tb_goodsType.title title1-->
+<!--    FROM tb_goods JOIN tb_goodsType-->
+<!--    ON tb_goods.`typeId`=tb_goodsType.`id`-->
+<!--    WHERE tb_goods.`typeId`=1-->
+<!--    ORDER BY tb_goods.`create_time` DESC-->
+<!--    LIMIT 4-->
+<!--    </select>-->
+<!--    <resultMap id="ok" type="Goods" autoMapping="true">-->
+<!--        <id property="id" column="id"/>-->
+<!--        <result property="bannerPath" column="bannerPath"/>-->
+<!--        <result property="detail" column="detail"/>-->
+<!--        <result property="imgPath" column="imgpath"/>-->
+<!--        <result property="price" column="price"/>-->
+<!--        <result property="registerTime" column=""-->
+<!--        <association property="goodsType" javaType="GoodsType">-->
+<!--            <id property="id" column="typeId"/>-->
+<!--            <result property="title" column="title1"/>-->
+<!--            <result property="banner_path" column="bannerPath1"/>-->
+<!--        </association>-->
+<!--    </resultMap>-->
+</mapper>
