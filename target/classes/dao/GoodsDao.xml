@@ -15,6 +15,11 @@
         insert into tb_goods (title,imgpath,bannerpath,price,detail,typeId,create_time)
         values (#{title},#{imgPath},#{bannerPath},#{price},#{detail},#{typeId},#{registerTime})
     </insert>
+    <select id="selectById" resultType="Goods">
+        select id,title,imgpath imgPath,bannerpath bannerPath,price,detail,typeId,create_time registerTime
+        from tb_goods
+        where id=#{goodsId}
+    </select>
 <!--    <select id="selectByTypeId" resultMap="ok" >-->
 
 <!--    SELECT tb_goods.`id` id,tb_goods.`title` title,tb_goods.`bannerPath` bannerPath,tb_goods.`price` price ,tb_goods.`detail` detail,tb_goods.`imgpath` imgPath-->

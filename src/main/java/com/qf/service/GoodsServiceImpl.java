@@ -10,6 +10,11 @@ import java.util.List;
 public class GoodsServiceImpl implements GoodsService {
     @Autowired
     private GoodsDao goodsDao;
+
+    @Override
+    public Goods selectById(Integer goodsId) {
+        return goodsDao.selectById(goodsId);
+    }
 //    @Override
 //    public List<Goods> getRecommendGoods(Integer id) {
 //        return goodsDao.selectByTypeId(id);

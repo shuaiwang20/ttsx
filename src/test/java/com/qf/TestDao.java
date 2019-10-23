@@ -72,4 +72,11 @@ public class TestDao {
         goodsDao.insert(new Goods(null,"基围虾","goods_detail.jpg","goods021.jpg",new BigDecimal("48.8"),"草莓浆果柔软多汁，味美爽口，适合速冻保鲜贮藏。草莓速冻后，可以保持原有的色、香、味，既便于贮藏，又便于外销。"
         ,2,new Date()));
     }
+    @Test
+    public void test6(){
+        ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+        GoodsDao goodsDao = context.getBean("goodsDao", GoodsDao.class);
+        Goods goods = goodsDao.selectById(1);
+        System.out.println(goods.toString());
+    }
 }

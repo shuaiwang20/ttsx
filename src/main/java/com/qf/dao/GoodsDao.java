@@ -8,4 +8,6 @@ import java.util.List;
 public interface GoodsDao {
 //    List<Goods> selectByTypeId(@Param("typeId") Integer id);
     void insert(Goods goods);
+
+    Goods selectById(@Param("goodsId") Integer goodsId);
 }

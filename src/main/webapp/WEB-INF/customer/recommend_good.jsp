@@ -27,7 +27,7 @@
             <c:forEach items="${goodsType.goodsList}" var="goods">
                 <li>
                     <h4><a href="#">${goods.title}</a></h4>
-                    <a href="detail.html"><img src="${pageContext.request.contextPath}/customer/images/goods/${goods.bannerPath}"></a>
+                    <a href="${pageContext.request.contextPath}/goods/goodsDatail?goodsId=${goods.id}"><img src="${pageContext.request.contextPath}/customer/images/goods/${goods.bannerPath}"></a>
                     <div class="prize">${goods.price}</div>
                 </li>
             </c:forEach>

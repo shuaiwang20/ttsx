@@ -16,4 +16,9 @@ public class GoodsController {
     @Autowired
     private GoodsService goodsService;
 
+    @RequestMapping("/goodsDateail")
+    private String goodsDetail(Integer goodsId,HttpServletRequest request){
+        Goods goods=goodsService.selectById(goodsId);
+        return "";
+    }
 }
